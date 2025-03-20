@@ -152,12 +152,27 @@ padding-bottom: 188px;
 
 /* goals */
 
+.goals {
+        padding-top: 120px;
+        padding-bottom: 120px;
+}
+
 .goals-subtitle {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
+}
+
+.goals-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+}
+.goals-item {
+        width: calc((100% - 72px) / 3);
 }
 
 .goals-text {
@@ -166,8 +181,18 @@ padding-bottom: 188px;
         letter-spacing: 0.02em;
 }
 
+/* team */
+
 .team {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+        display: flex;
+        align-items: center;
+        gap: 24;
 }
 
 .team-title {
@@ -178,11 +203,13 @@ padding-bottom: 188px;
         color: #2e2f42;
         text-align: center;
         text-transform: capitalize;
+        padding-bottom: 72px;
 
 }
 
 .team-item {
     background-color: #fff;
+    width: calc((100% - 72px) / 3);
 }
 
 .team-subtitle {
@@ -193,6 +220,10 @@ padding-bottom: 188px;
         color: #2e2f42;
         text-align: center;
         text-transform: capitalize;
+}
+
+.team-pic {
+        max-width: 100%;
 }
 
 .team-text {
