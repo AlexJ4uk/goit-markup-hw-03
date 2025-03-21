@@ -20,13 +20,26 @@ h1, h2, h3, h4, h5, h6, p {
         margin: 0;
 }
 
+button {
+        cursor: pointer;
+}
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+}
+
 /* common */
 
+.section {
+        padding: 120px 0;
+}
+
 .container {
-        max-width: 1158px;
+        width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
-
 }
 
 /* Header */
@@ -112,8 +125,7 @@ gap: 40px;
 .hero {
 background-color: #2e2f42;
 color: #fff;
-padding-top: 188px;
-padding-bottom: 188px;
+padding: 188px 0;
 }
 
 
@@ -133,12 +145,10 @@ padding-bottom: 188px;
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: #fff;
-        background: #4d5ae5;
+        background-color: #4d5ae5;
         border: none;
-        cursor: pointer;
         border-radius: 4px;
-        display: flex;
-        align-items: center;
+        display: block;
         margin: 0 auto;
         padding: 16px 32px;
         min-width: 169px;
@@ -151,11 +161,6 @@ padding-bottom: 188px;
 }
 
 /* goals */
-
-.goals {
-        padding-top: 120px;
-        padding-bottom: 120px;
-}
 
 .goals-subtitle {
         font-weight: 500;
@@ -171,8 +176,9 @@ padding-bottom: 188px;
         align-items: center;
         gap: 24px;
 }
+
 .goals-item {
-        width: calc((100% - 72px) / 3);
+        width: calc((100% - 72px) / 4);
 }
 
 .goals-text {
@@ -185,14 +191,6 @@ padding-bottom: 188px;
 
 .team {
     background-color: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.team-list {
-        display: flex;
-        align-items: center;
-        gap: 24;
 }
 
 .team-title {
@@ -203,13 +201,16 @@ padding-bottom: 188px;
         color: #2e2f42;
         text-align: center;
         text-transform: capitalize;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
+}
 
+.team-list {
+        display: flex;
+        gap: 24px;
 }
 
 .team-item {
-    background-color: #fff;
-    width: calc((100% - 72px) / 3);
+        width: calc((100% - 72px) / 4);
 }
 
 .team-subtitle {
@@ -220,17 +221,24 @@ padding-bottom: 188px;
         color: #2e2f42;
         text-align: center;
         text-transform: capitalize;
-}
-
-.team-pic {
-        max-width: 100%;
+        margin-bottom: 8px;
+        padding-top: 32px;
 }
 
 .team-text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        text-align: center;
+        padding-bottom: 32px;
 }
+
+.team-item-container {
+        align-items: center;
+        background-color: #fff;
+}
+
+/* portfolio */
 
 .portfolio-title {
         font-weight: 700;
@@ -240,6 +248,25 @@ padding-bottom: 188px;
         color: #2e2f42;
         text-align: center;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+}
+
+.portfolio-item {
+        width: calc((100% - 48px) / 3);
+}
+
+.portfolio-container {
+        padding: 32px 16px;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+
 }
 
 .portfolio-subtitle {
@@ -248,6 +275,7 @@ padding-bottom: 188px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -271,4 +299,12 @@ color: #f4f4fd;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        max-width: 264px;
+        padding-top: 16px;
+}
+
+.page-footer .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: auto;
 }
